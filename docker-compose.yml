@@ -1,0 +1,28 @@
+
+services:
+  redis:
+    image: redis:latest
+    container_name: my-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
+
+  python-app:
+      image: python:3.9-slim
+      container_name: slim-python
+      depends_on:
+        - redis
+      volumes:
+      - "/Users/xuhuizhan/homework/NoSQL/final_project:/usr/ds5760"
+      working_dir: /usr/ds5760/
+      networks:
+        - app-network
+      command: tail -f /dev/null
+
+
+networks:
+  app-network:
+    driver: bridge
+
