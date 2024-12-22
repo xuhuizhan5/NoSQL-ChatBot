@@ -4,6 +4,8 @@
 
 **Email: xuhui.zhan@vanderbilt.edu**
 
+[Download Video Demonstration](fp_daniel_demo.mp4)
+
 ## Project Introduction
 
 This final project is an extension of my **Mini Project 1: Redis Chatbot**, where I built a chatbot leveraging Redis, API integrations, and prompt engineering with OpenAI's language model. Recognizing the potential for further exploration and enhancement, I decided to continue working on the project. The goal is to expand its functionality and refine its capabilities, making it more robust and versatile for real-world applications.
